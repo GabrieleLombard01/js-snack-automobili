@@ -43,3 +43,8 @@ const cars = [
 // Array dei veicoli a benzina
   const benzinaCars = cars.filter(car => car.alimentazione === 'benzina');
   console.log('Veicoli a benzina:', benzinaCars);
+
+// Array dei veicoli a diesel
+  const dieselCars = cars.filter(car => car.alimentazione === 'diesel');
+  console.log('Veicoli a diesel:', dieselCars);
+
