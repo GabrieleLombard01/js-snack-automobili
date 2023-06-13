@@ -1,7 +1,7 @@
 //JS RESET
 console.log('JS OK')
 
-//ARRAY AUTOMOBILI
+//ARRAY AUTOMOBILI:
 const cars = [
     {
       marca: 'Alfa Romeo',
@@ -40,3 +40,6 @@ const cars = [
     },
   ];
 
+// Array dei veicoli a benzina
+  const benzinaCars = cars.filter(car => car.alimentazione === 'benzina');
+  console.log('Veicoli a benzina:', benzinaCars);
