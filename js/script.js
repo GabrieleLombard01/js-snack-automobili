@@ -38,6 +38,21 @@ const cars = [
       modello: 'Smart',
       alimentazione: 'elettrico',
     },
+    {
+      marca: 'Toyota',
+      modello: 'Supra',
+      alimentazione: 'diesel',
+    },
+    {
+      marca: 'Fiat',
+      modello: 'Punto',
+      alimentazione: 'gpl',
+    },
+    {
+      marca: 'Tesla',
+      modello: 'mModel x',
+      alimentazione: 'elettrico',
+    },
   ];
 
 // Array dei veicoli a benzina
@@ -48,3 +63,6 @@ const cars = [
   const dieselCars = cars.filter(car => car.alimentazione === 'diesel');
   console.log('Veicoli a diesel:', dieselCars);
 
+// Array degli altri veicoli
+  const otherCars = cars.filter(car => car.alimentazione !== 'benzina' && car.alimentazione !== 'diesel');
+  console.log('Altri veicoli:', otherCars);
